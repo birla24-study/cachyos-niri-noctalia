@@ -1,0 +1,282 @@
+[backdrop]
+blur_intensity = 0.0
+tint_intensity = 0.0
+
+[bar.default]
+background_opacity = 0.4999999888241291
+center = [ "workspaces" ]
+concave_edge_corners = false
+end = [ "clock" ]
+margin_ends = 0
+radius = 0
+start = [ "media" ]
+thickness = 24
+
+    [bar.default.dead_zone.actions]
+    middle = "settings-open"
+
+[control_center]
+hidden_tabs = [ "monitor", "screen-time" ]
+show_session_button = false
+
+    [control_center.calendar]
+    show_week_numbers = true
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000002" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 160.0
+    box_width = 368.0
+    cx = 1034.0
+    cy = 144.0
+    output = "DP-2"
+    placement_height = 1024.0
+    placement_width = 1280.0
+    rotation = 0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+        layout = "horizontal"
+        shadow = false
+
+[hot_corners]
+enabled = true
+
+    [hot_corners.top_right]
+    action = "command"
+
+[location]
+address = "bhopal"
+
+[lockscreen]
+blur_intensity = 0.99999997764825821
+blurred_desktop = true
+tint_intensity = 0.0
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-widget-0000000000000001" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 640.0
+    cy = 862.0
+    output = "DP-2"
+    placement_height = 1024.0
+    placement_width = 1280.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 352.0
+    box_width = 368.0
+    cx = 640.0
+    cy = 256.0
+    output = "DP-2"
+    placement_height = 1024.0
+    placement_width = 1280.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        shadow = false
+
+[notification]
+background_opacity = 0.69999998435378075
+border = false
+layer = "overlay"
+position = "top_center"
+show_actions = false
+show_app_name = false
+
+[osd]
+background_opacity = 0.69999998435378075
+border = false
+
+[plugin_settings."h465855hgg/lyrics"]
+display_mode = "lyrics"
+lyrics_source = "lrclib"
+player_allowlist = [ "*", "celluloid", "gnome-music" ]
+
+[plugins]
+enabled = []
+
+[shell]
+button_borders = false
+card_borders = false
+clipboard_enabled = false
+clipboard_keep_from_closed_apps = false
+input_borders = false
+niri_overview_type_to_launch_enabled = true
+popup_borders = false
+telemetry_enabled = true
+
+    [shell.launcher]
+    categories = false
+    pinned = [ "chrome-fmgjjmmmlfnkbppncabfkddbjimcfncm-Default" ]
+    show_app_origin_indicator = false
+    sort_by_usage = false
+
+        [shell.launcher.providers.calculator]
+        global = false
+
+        [shell.launcher.providers.emoji]
+        global = false
+
+        [shell.launcher.providers.session]
+        global = true
+
+        [shell.launcher.providers.wallpaper]
+        global = false
+
+        [shell.launcher.providers.windows]
+        global = false
+
+    [shell.panel]
+    borders = false
+    control_center_placement = "floating"
+    open_near_click_control_center = true
+    session_placement = "floating"
+    session_position = "center"
+    shadow = false
+    transparency_mode = "glass"
+    wallpaper_placement = "floating"
+
+    [shell.screen_corners]
+    enabled = true
+    size = 8
+
+    [shell.session]
+    grid = true
+
+        [[shell.session.actions]]
+        action = "lock"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "1"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "logout"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "2"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "lock_and_suspend"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "3"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "reboot"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "4"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "shutdown"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "5"
+        variant = "destructive"
+
+        [[shell.session.actions]]
+        action = "command"
+        command = "notify-send 'Noctalia' 'Custom session entry'"
+        countdown_seconds = 0.0
+        enabled = false
+        variant = "default"
+
+    [shell.shadow]
+    alpha = 0.0
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Lilac AMOLED"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-rainbow"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    community_ids = [ "antigravity", "brave", "brave-origin", "telegram", "obsidian", "vscode", "fastfetch" ]
+
+[wallpaper]
+directory = "/home/iiserb/Pictures/Wallpapers"
+transition = [ "fade" ]
+
+    [wallpaper.default]
+    path = "/home/iiserb/Pictures/Wallpapers/Sunset by the Pier.jpg"
+
+    [wallpaper.last]
+    path = "/home/iiserb/Pictures/Wallpapers/Sunset by the Pier.jpg"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/iiserb/Pictures/Wallpapers/Sunset by the Pier.jpg"
+
+    [[wallpaper.favorite]]
+    path = "/home/iiserb/Pictures/Wallpapers/walls-master/beach-path.jpg"
+    theme_mode = "auto"
+
+[weather]
+refresh_minutes = 5
+
+[widget.audio_visualizer]
+capsule = true
+centered = false
+mirrored = false
+
+[widget.clock]
+format = "%d %B, %H:%M"
+
+[widget.media]
+hide_when_no_media = true
+max_length = 600
+title_scroll = "on_hover"
+
+[widget.network]
+show_label = false
+
+[widget.volume]
+show_label = false
+
+[widget.workspaces]
+pill_scale = 0.60000000000000009
+show_labels = false
