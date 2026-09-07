@@ -8,6 +8,14 @@ window-rule {
         blur true
         xray true
     }
+    popups {
+        opacity 0.85
+        geometry-corner-radius 12
+        background-effect {
+            blur true
+            xray false
+        }
+    }
 }
 
 window-rule {
@@ -39,6 +47,12 @@ layer-rule {
     match namespace=r#"^noctalia-(bar-[^"]+|notification|dock|panel|attached-panel|osd)$"#
     background-effect {
         xray false
+    }
+    popups {
+        background-effect {
+            blur true
+            xray false
+        }
     }
 }
 
