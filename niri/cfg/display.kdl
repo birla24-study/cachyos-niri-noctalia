@@ -8,6 +8,16 @@
     scale 1 // No scaling (use 2 for HiDPI)
 }
 
+output "Dell Inc. DELL P1917S GJ6XG32H05TL" {
+    // Omitting refresh rate auto-selects the highest available refresh rate (75 Hz) for 1280x1024
+    mode "1280x1024"
+}
+
+output "DP-2" {
+    // Also matched by connector name
+    mode "1280x1024"
+}
+
 output "HDMI-A-1" {
     mode "1920x1080@60.000"
 }

@@ -2,3 +2,4 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
     spawn-at-startup "noctalia"
+    spawn-sh-at-startup "~/.config/niri/scripts/notify-refresh-rate.py"
