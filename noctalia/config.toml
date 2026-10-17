@@ -9,7 +9,7 @@ sound_volume = 0.5
 
 [backdrop]
 blur_intensity = 0.5
-enabled = false
+enabled = true
 tint_intensity = 0.30000001192092896
 
 [bar]

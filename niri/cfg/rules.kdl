@@ -64,14 +64,9 @@ layer-rule {
     }
 }
 
-/* Place the regular wallpaper on the backdrop. */
+/* Place Noctalia's blurred backdrop on the overview backdrop. */
 layer-rule {
     match namespace="^noctalia-backdrop"
-    place-within-backdrop true
-}
-
-layer-rule {
-    match namespace="^noctalia-wallpaper"
     place-within-backdrop true
 }
 

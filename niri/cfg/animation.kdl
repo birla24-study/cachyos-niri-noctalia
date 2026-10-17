@@ -29,6 +29,11 @@ animations {
         curve "ease-out-quad"
     }
 
+    overview-open-close {
+        duration-ms 350
+        curve "cubic-bezier" 0.16 1.0 0.3 1.0
+    }
+
     slowdown 1.2
 }
 
