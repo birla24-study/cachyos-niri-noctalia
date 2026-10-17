@@ -25,7 +25,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"^chrome-.*-Default$"#
+    match app-id=r#"^(chrome|brave)-.*-Default$"#
 
     open-maximized true
 }
